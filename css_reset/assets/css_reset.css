@@ -1,0 +1,14 @@
+header, aside, section { 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+body > h2{
+  line-height: 1.5 px;
+}
