@@ -9,7 +9,7 @@
 ActiveRecord::Base.transaction do 
   User.destroy_all
 
-  users = []
+  # users = []
   cynthia = User.create!(email: 'oh_ma_stars@gmail.com')
   users << cynthia
   

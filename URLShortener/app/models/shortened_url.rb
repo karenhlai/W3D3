@@ -12,7 +12,7 @@ class ShortenedUrl < ApplicationRecord
   validates :long_url, uniqueness: true
   validates :short_url, presence: true
 
-  belongs_to :submitter,
+  belongs_to :users,
     primary_key: :id,
     foreign_key: :user_id,
     class_name: :User
@@ -31,5 +31,5 @@ class ShortenedUrl < ApplicationRecord
     new_instance.save!
   end
 
-  
+ 
 end
